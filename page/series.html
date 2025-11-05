@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+        <!--Para obtener las clases de mi archivo css-->
+        <link rel="stylesheet" href="../dist/css/mi-estilo.css">
+     </head>
+    <body class="body">
+         
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+                <!--Carrousel , diapositiva de imagenes-->
+            <section>
+                <div class="container">
+                    <div class="row" style="height: 500px;">
+                        <div class="col-12 col-sm-4"></div>
+                        <div class="col-12 col-sm-4">
+                        <div class="gallery">
+                            <!--Variable personalizada-->
+                            <span style="--i:1">
+                                <img src="https://c.tenor.com/_fmq-VYKg8YAAAAd/tenor.gif" alt="" />
+                            </span>
+                            <span style="--i:2">
+                                <img src="../dist/imagenes/GIF STRANGER THINGS.gif" alt="" />
+                            </span>
+                            <span style="--i:3">
+                                <img src="../dist/imagenes/GIF SIETE PECADOS.webp" alt="" />
+                            </span>
+                            <span style="--i:4">
+                                <img src="../dist/imagenes/GIF MERLINA.gif" alt="" />
+                            </span> 
+                            <span style="--i:5">
+                                <img src="../dist/imagenes/CINEMA.png" alt="" />
+                            </span>
+                            <span style="--i:6">
+                                <img src="../dist/imagenes/GIF JOHN WICK.gif" alt="" />
+                            </span>
+                            <span style="--i:7">
+                                <img src="../dist/imagenes/GIF PEACE MAKER.gif" alt="" />
+                            </span>
+                            <span style="--i:8">
+                                <img src="https://i.makeagif.com/media/10-06-2015/cAfGrW.gif" alt="" />
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!--Carrousel , videos peliculas de accion-->
+        <section class="netflix-carousel-section">
+            <div class="container-fluid">
+            <h2 class="text-white mb-3">Series de Acción</h2>
+            <div class="netflix-row">
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                       <iframe width="300" height="300" src="https://www.youtube.com/embed/C37ih3OHxA0?si=gZOTUfJWKYLpLjSD" title="YouTube video player" 
+                       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    <div class="card-body p-2">
+                        <small class="card-title">PEACEMAKER TEMPORADA 1</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                       <iframe width="300" height="300" src="https://www.youtube.com/embed/L04eXyXbL_o?si=E7SRYsVwG6Wr_5M5" title="YouTube video player" 
+                       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    <div class="card-body p-2"><small class="card-title">PEACEMAKER TEMPORADA 2</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/u7oRIRn3mc4?si=Vn4FTSFYu4YLwj7i" title="YouTube video player"
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                 <div class="card-body p-2"><small class="card-title">HALO TEMPORADA 1</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/54RZkkoRiP0?si=ihGPe2pjKh46bs6r" title="YouTube video player" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">HALO TEMPORADA 2</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/CfOuYm8EnBA?si=c-OAkss8_xe9DFCT" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">COBRA KAI TEMPORADA 1</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/F65meKFzfEw?si=5TkbOLgF0zQZuyYH" title="YouTube video player"
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">COBRA KAI TEMPORADA 2</small></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+<!--Carrousel , videos series de Drama-->
+<section class="netflix-carousel-section">
+            <div class="container-fluid">
+            <h2 class="text-white mb-3">Series de Drama</h2>
+            <div class="netflix-row">
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                       <iframe width="300" height="300" src="https://www.youtube.com/embed/Wre1F5YyIlA?si=VgTuYafVmkAFWz2N" title="YouTube video player" 
+                       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    <div class="card-body p-2">
+                        <small class="card-title">STRANGER THINGS TEMPORADA 1</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                       <iframe width="300" height="300" src="https://www.youtube.com/embed/d4ud-984uYE?si=NV65rj6AbXTx04V4" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    <div class="card-body p-2"><small class="card-title">STRANGER THINGS TEMPORADA 2</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/7gso0OQuwRA?si=zSSAaRPM0UPnPZ9X" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                 <div class="card-body p-2"><small class="card-title">STRANGER THINGS TEMPORADA 3</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/i_dD014ZHTA?si=QaxIqIZfGW2wYZ8A" title="YouTube video player" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">STRANGER THINGS TEMPORADA 4</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/-x6fsq5FlBk?si=9ydbalbS1qJ2y6rk" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">TULSA KING TEMPORADA 1</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/Mb-JgengAlw?si=3v1uNoflb9C68epP" title="YouTube video player"
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">TULSA KING TEMPORADA 2</small></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+<!--Carrousel , videos series de comedia-->
+<section class="netflix-carousel-section">
+            <div class="container-fluid">
+            <h2 class="text-white mb-3">Series de Comedia</h2>
+            <div class="netflix-row">
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/Qh3rpbpG8So?si=QZ0hERS6IbqVujSN" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2">
+                        <small class="card-title">FUBAR TEMPORADA 1</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                       <iframe width="300" height="300" src="https://www.youtube.com/embed/DjNQCnFvc6M?si=noaE2CywP_uSeRSj" title="YouTube video player" 
+                       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    <div class="card-body p-2"><small class="card-title">FUBAR TEMPORADA 2</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/W33qmGhU74g?si=dgHklumuBn-2dGa0" title="YouTube video player" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                   </iframe>
+                 <div class="card-body p-2"><small class="card-title">RICK Y MORTY TEMPORADA 5</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/P9WZhGMlDBE?si=z-EEdy2sYKDRDMoH" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                   </iframe>
+                    <div class="card-body p-2"><small class="card-title">RICK Y MORTY TEMPORADA 6</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/yMp_qiaC8VM?si=BZDX4zrJ30R7BPTD" title="YouTube video player" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">MERLINA TEMPORADA 1</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="315" src="https://www.youtube.com/embed/I53DryQ0QJQ?si=edOnEb5YCeRAy5RV" title="YouTube video player"
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">MERLINA TEMPORADA 2</small></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+<!--Carrousel , SERIES de ANIME-->
+<section class="netflix-carousel-section">
+            <div class="container-fluid">
+            <h2 class="text-white mb-3">Series de Anime</h2>
+            <div class="netflix-row">
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/Ny2gRitsrq4?si=MLHW797tDCSuykMf" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2">
+                        <small class="card-title">SIETE PECADOS CAPITALES TEMPORADA 1</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                       <iframe width="300" height="300" src="https://www.youtube.com/embed/5uAHfM3lEdk?si=mbVNmQk6cn2gIbuX" title="YouTube video player" 
+                       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    <div class="card-body p-2"><small class="card-title">SIETE PECADOS CAPITALES TEMPORADA 2</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/mxOD1G_-w0M?si=7xWhx_ZSDh6r3jb0" title="YouTube video player" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                   </iframe>
+                 <div class="card-body p-2"><small class="card-title">SIETE PECADOS CAPITALES TEMPORADA 3</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                   <iframe width="300" height="300" src="https://www.youtube.com/embed/JZLdJJOvObY?si=tKjFYpphHBsRiFEg" title="YouTube video player" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">SIETE PECADOS CAPITALES TEMPORADA 4</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/BjSibXpwW6w?si=rfXKIsDolMyfqzix" title="YouTube video player"
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">RECORD OF RAGNAROK TEMPORADA 1</small></div>
+                </div>
+            </div>
+            <div class="video-card mx-3">
+                <div class="card bg-dark text-white border-0">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/Uzfk8zCCgpc?si=DzY91uK5G_q8wxSD" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="card-body p-2"><small class="card-title">RECORD OF RAGNAROK TEMPORADA 2</small></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+            <!--Sección para productos-->
+            
+
+            <!--Sección oara nuestros Tabs-->
+            
+         </main>
+       
+         
+         <footer class="footer">
+                <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <h3 class="text-center text-white"></h3>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <!-- Button trigger modal -->
+                        
+                    </div>
+                    <div class="col-12 col-sm-4"></div>
+                </div> 
+            </div>
+        </footer>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <label id="Idtitulo_modalVideo">Texto por defecto</label>
+                    </h5>
+                    <button type="button" onclick="Video_Stop('Iframevideo1')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe 
+                    width="560" 
+                    height="315" 
+                    id="Iframevideo1"
+                    src=""
+                     title="YouTube video player" 
+                     frameborder="0" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" 
+                      allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="Video_Stop('Iframevideo1')"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="dist/js/bootstrap.bundle.min.js"></script>
+        <script src="dist/js/mi-script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,378 @@
+.body{
+    background-color: rgb(14, 16, 17);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; 
+}
+
+.slider-carousel{
+    background-color:  rgb(0, 0, 0, 0.751);
+}
+
+.texto-slider{
+    color:black;
+    font-weight: bold; 
+    -webkit-text-stroke: 0.2px white;     
+}
+
+.h3-titutlo-white{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer{
+    margin: 0px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.card {
+  width: 60%; 
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+  margin: 0 auto; 
+}
+
+.container2{
+  perspective: 250px;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  margin: 0 auto;
+ 
+}
+
+
+
+.tarjeta{
+  width: 150px;
+  height: 240px;
+  background-color: #442222;
+  font-size: 50px;
+  border-radius: 10px;
+  cursor:pointer;
+  animation:  Carrusel 10s linear infinite;
+  position: relative;
+}
+
+.card-link {
+    position: absolute; /* ¡CLAVE! Posiciona el enlace sobre el padre (.tarjeta) */
+    top: 0;
+    left: 0;
+    width: 100%;    /* Extiende el enlace por todo el ancho */
+    height: 100%;   /* Extiende el enlace por todo el alto */
+    z-index: 1;     /* Asegura que el enlace sea clicable (esté encima) */
+    
+    /* BLOQUEO DE ESTILO: Elimina el subrayado/color del enlace */
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.animated-element:hover {
+  animation-play-state: paused;
+}
+
+@keyframes Carrusel
+{
+  from{
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9;
+  }
+  50%{
+    z-index: -10;
+  }
+
+  to{
+    transform: rotateX(0deg) translateZ(100px) rotateX(0deg);
+    z-index: 10;
+  }
+
+}
+
+
+#goku{
+  background-image: url(../imagenes/goku2.jpg);
+  background-size: cover;
+
+}
+
+#goku:hover{
+  box-shadow: 0px 0px 10px rgb(60, 0, 255) ;
+    animation-play-state: paused;
+}
+
+
+#peacemaker{
+  background-image: url(../imagenes/PEACERMAKER.jpg);
+  background-size: cover;
+}
+
+#peacemaker:hover{
+  box-shadow: 0px 0px 10px rgb(60, 0, 255) ;
+    animation-play-state: paused;
+}
+
+
+#vigilante{
+  background-image: url(../imagenes/vigilante.webp);
+  background-size: cover;
+  animation-delay: -1s;
+}
+
+#vigilante:hover{
+  box-shadow: 0px 0px 10px rgb(47, 0, 255) ;
+  animation-play-state: paused;
+}
+
+
+
+.tarjeta h3{
+  color: white;
+  font-size: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 200px;
+  background-color: #1100ff;
+}
+
+.netflix-row {
+    display: flex; /* Muestra los elementos en una fila */
+    overflow-x: scroll; /* **Clave:** Habilita el desplazamiento horizontal */
+    padding: 50px 0;
+    
+    /* Ocultar barra de desplazamiento (Cross-Browser) */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.netflix-row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+}
+
+/* 3. Tarjeta de Video */
+.video-card {
+    /* Define el tamaño fijo y evita que se encoja */
+    flex-shrink: 0; 
+    width: 300px; /* Ancho de la tarjeta */
+    margin-right: 10px; /* Espacio entre tarjetas */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Transición para el hover */
+    z-index: 1;
+}
+
+/* 4. Efecto Hover (Zoom) - El estilo característico de Netflix */
+.video-card:hover {
+    transform: scale(1.5); /* Hace la tarjeta 30% más grande */
+    z-index: 10; /* La trae al frente de las demás */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* 5. Asegura que la imagen ocupe todo el ancho */
+.video-card img {
+    border-radius: 10px;
+}
+
+/* 6. Ajuste para que el texto sea más discreto */
+.video-card .card-body {
+    padding-top: 10px !important;
+    
+}
+
+.video-card .card-title {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+
+.imagen-hover {
+  background-image: url("dist\imagenes\icono_series.png"); /* Imagen inicial */
+ 
+  width: 100%;                           /* Ocupa todo el ancho del contenedor */
+  height: 265px;                         /* Altura fija de la imagen */
+ 
+  background-size: cover;                /* Ajusta la imagen para cubrir todo el espacio */
+  background-position: center;           /* Centra la imagen dentro del contenedor */
+  transition: all 0.3s ease;             /* Suaviza el cambio de imagen o animación */
+  cursor: pointer;                       /* Cambia el cursor a una mano (interactivo) */
+}
+ 
+/*
+ Cuando el usuario pasa el mouse por encima de la imagen,
+ se cambia automáticamente la imagen de fondo.
+*/
+.imagen-hover:hover {
+  background-image: url("dist\imagenes\icono_series.png");  /* Imagen que aparece al hacer hover */
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #333 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+   
+}
+ 
+/* Efecto al pasar el mouse */
+.nav-link :hover {
+  color: #00ff0d; /* cambia color del texto */
+  transform: scale(1.1); /* agranda ligeramente */
+}
+ 
+.nav-link::after {
+  content: "";                 /* Crea un pseudoelemento vacío visible en pantalla */
+  position: absolute;          /* Lo posiciona de forma absoluta respecto al enlace */
+  left: 0;                     /* Alinea el pseudoelemento al borde izquierdo del enlace */
+  bottom: -1px;                /* Coloca la línea justo debajo del texto (5px hacia abajo) */
+  width: 0%;                   /* Inicia con ancho 0 (la línea no se ve al principio) */
+  height: 2px;                 /* Grosor de la línea inferior */
+  background-color: #3b0cc8;   /* cambiar el color */
+  transition: width 0.3s ease; /* Anima la expansión del ancho en 0.3 segundos */
+}
+.nav-link:hover::after {
+  width: 100%;                 /* La línea se extiende a lo largo de todo el texto */
+}
+
+.container-slider-text
+{
+ color: #999;                 /* Color base del texto (gris suave) */   
+  font-size: 36px;             /* Tamaño de fuente grande y legible */
+  font-weight: bold;           /* Aplica negrita al texto */
+  width: 100%;                 /* Ocupar todo el ancho disponible */
+}
+
+ 
+.flip-slider-text {
+  height: 50px;                /* Altura visible del área animada */
+  overflow: hidden;            /* Oculta el texto que sale fuera del área */
+}
+
+ 
+.flip-slider-text > div > div {
+  color: #fff;                 /* Texto blanco dentro de cada bloque */
+  padding: 4px 10px;           /* Espaciado interno horizontal y vertical */
+  height: 45px;                /* Altura de cada línea de texto */
+  margin-bottom: 45px;         /* Espaciado entre bloques (sirve para el desplazamiento) */
+  display: inline-block;       /* Los bloques se comportan como elementos en línea con dimensiones */
+}
+
+ /*Pseudo clase que toma el primer hijo*/
+.flip-slider-text div:first-child {
+  animation: show 5s linear infinite; /* Ejecuta la animación 'show' continuamente */
+  /* 
+     - 5s: duración total del ciclo
+     - linear: mantiene velocidad constante
+     - infinite: repite indefinidamente
+  */
+}
+
+ 
+.flip-slider-text div div {
+  background: #42c58a;         /* Verde menta (color por defecto) */
+}
+.flip-slider-text div:first-child div {
+  background: #4ec7f3;         /* Azul celeste para el primer bloque */
+}
+.flip-slider-text div:last-child div {
+  background: #DC143C;         /* Rojo carmesí para el último bloque */
+}
+
+/*@keyframes crear animaciones*/ 
+@keyframes show {
+  0%      { margin-top: -270px; }  /* Inicia fuera del área visible (texto oculto) */
+  5%      { margin-top: -180px; }  /* Muestra el segundo texto */
+  33%     { margin-top: -180px; }  /* Mantiene visible el segundo texto */
+  38%     { margin-top: -90px; }   /* Sube al tercer texto */
+  66%     { margin-top: -90px; }   /* Mantiene visible el tercer texto */
+  71%     { margin-top: 0px; }     /* Muestra el primer texto */
+  99.99%  { margin-top: 0px; }     /* Pausa antes de reiniciar */
+  100%    { margin-top: -270px; }  /* Reinicia el ciclo desde arriba */
+}
+ 
+
+
+.img-container {
+  position: relative;
+  width: 300px;  
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Imagen base */
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 3.6s ease;  
+}
+
+/* Segunda imagen (oculta por defecto) */
+.img-container .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Efecto al hacer hover */
+.img-container:hover .img-normal {
+  transform: scale(6.6); /* zoom */
+  opacity: 0; /* se desvanece */
+}
+
+.img-container:hover .img-hover {
+  opacity: 1; /* aparece */
+  transform: scale(1.1); /* pequeño zoom */
+}
+
+
+.gallery{
+  position:relative;
+  top:20%;
+  width:300px;
+  height:200px;
+  transform-style:preserve-3d;/*Se urtiliza para mantener los elementos en un espacio 3d*/
+  animation:rotate 25s linear infinite;
+}
+
+@keyframes rotate{
+  /*INICIO DEL MOVIMIENTO*/
+  from{
+    /*Da perspectiva de una distancia de 1200px */
+    transform:perspective(1200px) rotateY(0deg);
+  }
+  /*FINAL DEL MOVIMIENTO*/
+  to{
+    transform:perspective(1200px) rotateY(360deg);
+  }
+}
+
+.gallery span{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transform-origin:center;
+  transform-style:preserve-3d;
+  /*360 / n cantidad de imagenes mostar*/
+  transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+.gallery span img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
