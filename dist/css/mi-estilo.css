@@ -34,7 +34,9 @@ main {
 }
 
 .card {
-  
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
   margin: 0 auto; 
 }
 
@@ -374,4 +376,5 @@ main {
   object-fit:cover;
 
 }
+
 
